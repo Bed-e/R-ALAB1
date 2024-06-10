@@ -33,14 +33,29 @@ let cellHeaders = [];
 for (let i = 0; i < dataArray[0].length; i++) {
   cellHeaders.push(dataArray[0][i]);
 }
-console.log(cellHeaders);
+//console.log(cellHeaders);
 
 let objectArray = [];
 
 let object = {};
 for (let i = 1; i < dataArray.length; i++) {
   row = dataArray[i];
-  object = row;
+  object = {};
+  for (let j = 0; j < row.length; j++) {
+    // console.log(
+    //   "cellHeaders[" +
+    //     j +
+    //     "]= " +
+    //     cellHeaders[j] +
+    //     "\nRow[" +
+    //     j +
+    //     "]= " +
+    //     row[j]
+    // );
+    const keyName = cellHeaders[j];
+    const valueName = row[j];
+    object[keyName] = valueName;
+  }
   objectArray.push(object);
 }
 console.log(objectArray);

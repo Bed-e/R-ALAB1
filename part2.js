@@ -84,7 +84,7 @@ function makeArray(CSV, title) {
 }
 console.log("someMoreCSV:");
 makeArray(someMoreCSV, "someMoreCSV");
-// console.log("fiveColCSV");
-// makeArray(fiveColCSV, "fiveColCSV");
-// console.log("CSVFromNewLab");
-// makeArray(CSVFromNewLab, "CSVFromNewLab");
+console.log("fiveColCSV");
+makeArray(fiveColCSV, "fiveColCSV");
+console.log("CSVFromNewLab");
+makeArray(CSVFromNewLab, "CSVFromNewLab");
